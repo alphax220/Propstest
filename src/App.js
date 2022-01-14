@@ -1,27 +1,20 @@
 import React from 'react'
 import './App.css'
-import Photo from './Component/Profile/Picture'
-import Name from './Component/Profile/FullName'
-import Adress from './Component/Profile/Adress'
-import './Component/Profile/style.css'
-
-
+import Profil from './Profil/Profil';
+import doom from './doom4.jpg'
         
-function App(props)
+class App extends React.Component
 {
+                
+               render(){
                 return <div className='back'>
-                    <div className='redcomp' >
-                    <Photo photo={props.image}/>
+                    <Profil fullname="Mike" bio="I'm a Killer" profession="Cutter">  
+                    {doom}
+                    </Profil>               
                     </div>
-                    <br/>
-                    <div className='reddown' >
-                    <Name name={props.name}/>
-                    </div>
-                    <br/>
-                    <div className='reddown2' >
-                    <Adress adress={props.adress}/>
-                    </div>
-                 </div>
+
+               } 
+                
                  
 }
 

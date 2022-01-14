@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name={"Alpha Ousmane Diallo"}adress={"TEXAS"}/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
